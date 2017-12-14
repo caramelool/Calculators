@@ -1,0 +1,134 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.logonrm.calculators.fragments.IMCFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sexo:"
+            android:layout_weight="5"
+            android:layout_gravity="left"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_masculino"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculino"
+
+                android:layout_marginTop="10dp"/>
+
+            <RadioButton
+                android:id="@+id/rb_feminino"
+                android:layout_weight="5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Feminino"
+
+                android:layout_marginTop="10dp"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altura(m)"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Peso(kg)"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_altura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:id="@+id/et_peso"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="0"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seu IMC é:"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_ideal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Peso Ideal"
+            android:layout_weight="5"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/imageUser"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:src="@drawable/boy"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+</FrameLayout>
